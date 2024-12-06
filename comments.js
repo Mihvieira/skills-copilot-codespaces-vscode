@@ -1,4 +1,7 @@
 // create web server
+
+// create web server
+
 const express = require('express');
 const router = express.Router();
 
@@ -18,7 +21,7 @@ router.get('/:id/edit', (req, res) => {
     res.send('Edit Comment ' + req.params.id);
 });
 
-router.get('/:id/delete', (req, res) => {
+router.delete('/:id', (req, res) => {
     res.send('Delete Comment ' + req.params.id);
 });
 
